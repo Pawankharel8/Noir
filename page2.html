@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 90%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .r {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover:nth-child(1) { color: #1877F2; }
+        .social-icons a:hover:nth-child(2) { color: #E4405F; } 
+        .social-icons a:hover:nth-child(3) { color: #5865F2; } 
+        .social-icons a:hover:nth-child(4) { color: #DB4437; } 
+
+        .forgot-password {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .forgot-password a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: 0.5px solid #ddd;
+        }
+        p{
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 85%;
+                padding: 15px;
+            }
+
+            button {
+                padding: 8px;
+            }
+
+            .forgot-password {
+                font-size: 12px;
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                padding: 20px;
+            }
+
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+
+            input {
+                padding: 8px;
+            }
+
+            button {
+                padding: 8px;
+            }
+
+            .social-icons {
+                gap: 22px;
+            }
+
+            .social-icons a i {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <div class="forgot-password">
+                <label for="password">Password</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Register</button>
+            <div class="r">New to Blogger? <a href="page1.html">Create an account</a></div>
+
+            <hr>
+            <p>Login via:</p>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-discord fa-2x"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-google fa-2x"></i></a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
